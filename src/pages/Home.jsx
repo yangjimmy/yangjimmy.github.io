@@ -53,17 +53,13 @@ export default function Home() {
       <section className="stats-band py-4">
         <Container>
           <Row className="text-center g-3">
-            <Col xs={4}>
+            <Col xs={6}>
               <div className="stat-value"><Counter value={projects.length} /></div>
               <div className="stat-label">Projects</div>
             </Col>
-            <Col xs={4}>
+            <Col xs={6}>
               <div className="stat-value"><Counter value={categories.length} /></div>
               <div className="stat-label">Categories</div>
-            </Col>
-            <Col xs={4}>
-              <div className="stat-value"><Counter value={14} suffix="+" /></div>
-              <div className="stat-label">Students mentored</div>
             </Col>
           </Row>
         </Container>
