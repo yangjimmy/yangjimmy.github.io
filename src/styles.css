@@ -472,6 +472,9 @@ code,
 .detail-list li:hover { border-color: color-mix(in srgb, var(--accent) 40%, transparent); }
 .reveal.is-visible .detail-list li { opacity: 1; transform: none; }
 
+.subproject-card { transition: border-color 0.25s, transform 0.3s var(--ease-out); }
+.subproject-card.is-visible:hover { border-color: color-mix(in srgb, var(--accent) 45%, transparent); transform: translateY(-2px); }
+
 .project-sidebar { position: sticky; top: 5.5rem; }
 .sidebar-card { border: 1px solid var(--border-soft); border-radius: var(--radius); background: var(--surface); box-shadow: var(--shadow-soft); }
 .meta-row { padding: 0.6rem 0; border-bottom: 1px solid var(--border-soft); }

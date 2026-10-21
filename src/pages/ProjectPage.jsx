@@ -72,6 +72,34 @@ export default function ProjectPage() {
               ))}
             </Reveal>
 
+            {project.subprojects?.length > 0 && (
+              <section className="mb-5">
+                <Reveal>
+                  <h2 className="section-title h3">Projects</h2>
+                </Reveal>
+                <Row xs={1} md={2} className="g-3">
+                  {project.subprojects.map((sp, i) => (
+                    <Col key={sp.title}>
+                      <Reveal delay={(i % 2) * 80} className="card sidebar-card subproject-card h-100">
+                        <div className="card-body p-4">
+                          <h3 className="h6 fw-bold mb-1">{sp.title}</h3>
+                          <div className="small text-body-secondary mb-2">{sp.period}</div>
+                          <p className="mb-3">{sp.text}</p>
+                          <div className="d-flex flex-wrap gap-1">
+                            {sp.tech.map((t) => (
+                              <Badge key={t} bg="" className="tech-badge">
+                                {t}
+                              </Badge>
+                            ))}
+                          </div>
+                        </div>
+                      </Reveal>
+                    </Col>
+                  ))}
+                </Row>
+              </section>
+            )}
+
             <Reveal as="section" className="mb-5">
               <h2 className="section-title h3">Technical details</h2>
               <ul className="detail-list list-unstyled">
