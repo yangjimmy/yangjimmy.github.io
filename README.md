@@ -36,7 +36,7 @@ Copy an existing entry in the `projects` array and change:
 - `description`: paragraphs for the overview
 - `details`: bullet points for the technical details section
 - `featured: true` to also show it on the home page
-- `subprojects` (optional): a list of `{ title, period, text, tech }` shown as small cards, for grouping short projects into one entry (see `course-projects`)
+- `subprojects` (optional): a list of `{ title, period, text, tech }` shown as small cards, for grouping short projects into one entry (see `ml-mini-projects` and `robotics-mini-projects`)
 
 ### Add images
 
